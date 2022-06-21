@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon-32x32.png"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="dist/styles.css" />
+        <title>Frontend Mentor | Art gallery website</title>
+    </head>
+    <body
+        class="text-[18px] font-light leading-[1.5] text-dark-grey lg:text-[22px] lg:leading-[1.45]"
+    >
+        <section>
+            <div class="relative lg:flex">
+                <div class="relative hidden bg-almost-black lg:block lg:w-3/12">
+                    <h1
+                        class="absolute right-0 top-[189px] z-10 max-w-[514px] translate-x-[calc(50%-4rem)] whitespace-nowrap text-[6rem] lg:flex lg:flex-col lg:items-start"
+                    >
+                        <span class="bg-gradient-heading bg-gradient-heading-1"
+                            >MODERN</span
+                        >
+                        <span class="bg-gradient-heading bg-gradient-heading-2">
+                            ART GALLERY
+                        </span>
+                    </h1>
+                </div>
+                <div class="relative block md:w-3/5 lg:w-6/12">
+                    <picture>
+                        <source
+                            srcset="./assets/desktop/image-hero.jpg"
+                            media="(min-width: 1440px)"
+                        />
+                        <source
+                            srcset="./assets/tablet/image-hero.jpg"
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="./assets/tablet/image-hero.jpg"
+                            media="(min-width: 375px)"
+                        />
+
+                        <img
+                            src="./assets/mobile/image-hero.jpg"
+                            class="max-h-[240px] w-full object-cover md:max-h-[700px] lg:flex lg:max-h-[800px]"
+                            alt=""
+                        />
+                    </picture>
+
+                    <div
+                        class="space-y-8 px-4 pt-8 md:absolute md:top-1/2 md:right-0 md:max-w-[339px] md:-translate-y-1/2 md:translate-x-[80%] md:px-0 md:pt-0 lg:top-[189px]"
+                    >
+                        <h1
+                            class="max-w-[343px] text-6xl leading-[0.9] md:max-w-none lg:hidden"
+                        >
+                            MODERN ART GALLERY
+                        </h1>
+                        <p class="">
+                            The arts in the collection of the Modern Art Gallery
+                            all started from a spark of inspiration. Will these
+                            pieces inspire you? Visit us and find out.
+                        </p>
+                        <a href="./location.html" class="btn-art">
+                            <span>OUR LOCATION</span>
+                            <img
+                                src="./assets/icon-arrow-right.svg"
+                                alt="arrow right"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-[7.5rem] lg:py-[11.25rem]">
+            <div class="container">
+                <!-- grid image 1 -->
+                <div
+                    class="mb-8 flex flex-col md:mb-3 md:flex-row-reverse md:items-center md:gap-[4.25rem] lg:mb-[30px] lg:gap-[7.8125rem]"
+                >
+                    <picture class="md:grow">
+                        <source
+                            media="(min-width: 1440px)"
+                            srcset="./assets/desktop/image-grid-1.jpg"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/tablet/image-grid-1.jpg"
+                        />
+                        <source
+                            media="(min-width: 375px)"
+                            srcset="./assets/mobile/image-grid-1.jpg"
+                        />
+                        <img
+                            src="./assets/desktop/image-grid-1.jpg"
+                            alt="art img 1"
+                            class="w-full object-cover"
+                        />
+                    </picture>
+                    <div
+                        class="mt-[25px] md:mt-0 md:max-w-[223px] lg:max-w-[350px]"
+                    >
+                        <h2
+                            class="mb-[21px] leading-none md:mb-6 lg:mb-8 lg:text-[3.75rem]"
+                        >
+                            Your Day at the Gallery
+                        </h2>
+                        <p class="text-[22px] leading-[1.45]">
+                            Wander through our distinct collections and find new
+                            insights about our artists. Dive into the details of
+                            their creative process.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- row and column images -->
+                <div
+                    class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-3 lg:gap-[30px]"
+                >
+                    <picture class="md:row-start-1 md:row-end-3">
+                        <source
+                            media="(min-width: 1440px)"
+                            srcset="./assets/desktop/image-grid-2.jpg"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/tablet/image-grid-2.jpg"
+                        />
+                        <source
+                            media="(min-width: 375px)"
+                            srcset="./assets/mobile/image-grid-2.jpg"
+                        />
+                        <img
+                            src="./assets/desktop/image-grid-2.jpg"
+                            class="h-full w-full object-cover"
+                            alt=""
+                        />
+                    </picture>
+                    <picture class="md:grid-rows-1">
+                        <source
+                            media="(min-width: 1440px)"
+                            srcset="./assets/desktop/image-grid-3.jpg"
+                        />
+                        <source
+                            media="(min-width: 768px)"
+                            srcset="./assets/tablet/image-grid-3.jpg"
+                        />
+                        <source
+                            media="(min-width: 375px)"
+                            srcset="./assets/mobile/image-grid-3.jpg"
+                        />
+                        <img
+                            src="./assets/desktop/image-grid-3.jpg"
+                            alt=""
+                            class="w-full object-cover"
+                        />
+                    </picture>
+                    <div class="bg-almost-black py-12 px-6 text-lg text-white">
+                        <!-- <div class="container"> -->
+                        <h2
+                            class="leading mb-6 leading-none text-white lg:mb-8 lg:text-[3.75rem]"
+                        >
+                            COME & BE
+                            <br />
+                            INSPIRED
+                        </h2>
+                        <p class="text-white">
+                            We're excited to welcome you to our gallery and see
+                            how our collections influence you.
+                        </p>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-almost-black">
+            <div class="container">
+                <div
+                    class="grid items-start py-12 text-white md:grid-cols-[1fr,281px,1fr] md:py-14 lg:grid-cols-[1fr,430px,1fr]"
+                >
+                    <img
+                        src="./assets/logo-light.svg"
+                        alt="logo dark"
+                        class="w-[110px]"
+                    />
+                    <p
+                        class="mt-[38px] text-[1rem] font-light leading-[1.625] md:mt-0 lg:text-[18px] lg:leading-[1.5]"
+                    >
+                        The Modern Art Gallery is free to all visitors and open
+                        seven days a week from 8am to 9pm. Find us at 99 King
+                        Street, Newport, USA.
+                    </p>
+                    <ul
+                        class="mt-[38px] flex items-center gap-5 md:mt-0 md:justify-end"
+                    >
+                        <li>
+                            <a href="#" class="fill-white hover:fill-gold">
+                                <svg
+                                    width="20"
+                                    class=""
+                                    height="20"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0Z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fill-white hover:fill-gold">
+                                <svg
+                                    width="20"
+                                    height="20"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058ZM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0Zm0 4.865a5.135 5.135 0 1 0 0 10.27 5.135 5.135 0 0 0 0-10.27Zm0 8.468a3.333 3.333 0 1 1 0-6.666 3.333 3.333 0 0 1 0 6.666Zm5.338-9.87a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4Z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fill-white hover:fill-gold">
+                                <svg
+                                    width="20"
+                                    height="17"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M20 2.172a8.192 8.192 0 0 1-2.357.646 4.11 4.11 0 0 0 1.805-2.27 8.22 8.22 0 0 1-2.606.996A4.096 4.096 0 0 0 13.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 0 1 1.392 1a4.109 4.109 0 0 0 1.27 5.478 4.086 4.086 0 0 1-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 0 1-1.853.07 4.106 4.106 0 0 0 3.833 2.849A8.25 8.25 0 0 1 0 14.658a11.616 11.616 0 0 0 6.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0 0 20 2.172Z"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

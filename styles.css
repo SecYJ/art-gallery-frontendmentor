@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Outfit", sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-big-shoulder font-black uppercase text-almost-black;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 0.9;
+    }
+}
+
+@layer components {
+    .btn-art {
+        @apply flex;
+    }
+
+    .btn-art span {
+        @apply bg-almost-black px-8 py-6 text-white;
+    }
+
+    .btn-art img {
+        @apply bg-gold p-6;
+    }
+
+    .btn-art:hover span {
+        @apply bg-gold;
+    }
+
+    .btn-art:hover img {
+        @apply bg-almost-black;
+    }
+
+    .bg-gradient-heading {
+        background-clip: text;
+        color: transparent;
+    }
+
+    .bg-gradient-heading-1 {
+        background-image: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 95%,
+            rgba(21, 21, 21, 1) 95%
+        );
+    }
+
+    .bg-gradient-heading-2 {
+        background-image: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 1) 64.5%,
+            rgba(21, 21, 21, 1) 64.5%
+        );
+    }
+}
